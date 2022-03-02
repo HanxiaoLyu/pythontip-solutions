@@ -20,14 +20,14 @@ b = 20
 
 answers = [0] * 10
 
+
 def digits(a):
-    ret = 0
     while a > 0:
         answers[a % 10] += 1
         a = int(a / 10)
-    return ret
 
-for i in range(a, b+1):
+
+for i in range(a, b + 1):
     digits(i)
 
 for i in range(10):

@@ -1,10 +1,12 @@
-#参考代码，如嫌啰嗦，建议删除，一行搞定
+a = {4: 3, 8: 7, 3: 4}
+
+
 def solve_it():
     x = []
     for key in a:
-        x.append(key)
+        x.append(str(key))
 
-    return ",".join(x)
+    return ",".join(sorted(x))
 
 
-print(solve_it())  # 答案需要输出
+print(solve_it())
